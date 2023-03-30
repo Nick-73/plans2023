@@ -12,11 +12,11 @@
                 text-align:center;
                 color: white;
                 -webkit-text-stroke: 2px black;
-                background-color: gray;
                 margin: 0 auto;
             }
             img{
                 width: 750px;
+                text-align: center;
             }
             .pict img{
                 width: 750px;
@@ -26,11 +26,11 @@
                 margin-left: auto;
             }
             .link{
-                color: #ffcc99;
+                color: blue;
             }
             .fon{
                 width: 100%;
-                background-color: gray;
+                background-color: white;
                 display: flex;
                 justify-content: center;
                 
@@ -38,13 +38,13 @@
             .container{
                 width: 85%;
                 margin: 0 auto;
-                background-color: gray !important;
-                color: white;
+                background-color: white !important;
+                color: black;
                 
             }
             body{
                 text-align: justify;
-                background-color: gray;
+                background-color: white;
                 margin-right: auto;
                 margin-left: auto;
             }
@@ -56,18 +56,20 @@
             }
             .rov{
             text-align: center;
-            }
-            .nav-link{
-            color: white !important;
-            }  
+            } 
             .link{
-            color: #ffcc99;
+            color: blue;
             }
-            .nav-tabs{
+            .nav-tabs .nav-link{
             border-bottom: none;
+            color: grey !important;
             }     
             .nav-tabs .nav-link.active{
-                background: none !important;
+                background: grey;
+                color: white !important;
+            }
+            .otdel{
+                justify-content: center;
             }
         </style>
     </head>
@@ -105,19 +107,20 @@
                 <br><br>
                 <h1>Карты, схемы и фотографии</h1>
                 <br><br><br> 
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">Карты и схемы</a></li>
-                    <li class="nav-item"><a href="#second" class="nav-link" data-toggle="tab">Фотографии</a></li>
-                </ul>
+                <div class="otdel">
+                    <ul class="nav nav-tabs" >
+                        <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">Карты и схемы</a></li>
+                        <li class="nav-item"><a href="#second" class="nav-link" data-toggle="tab">Фотографии</a></li>
+                    </ul>
+                
                 <div class="tab-content">
                     <div class="tab-pane container active" id="home">
                         <br><br>
                         <p class="pict" align="center">
                             
-                            <img src="карта1.jpg" alt="" target="_blank"><br><br>
                             <img src="карта2.jpg" alt=""><br><br>
                             <img src="карта4.jpg" alt=""><br><br>
-                            <img src="карта5.jpg" alt=""><br><br>
+                            <img src="карта5.png" alt=""><br><br>
                             <img src="Наступление Красной армии в Прибалтике (июль-октябрь 1944).jpg" alt=""><p>Наступление Красной армии в Прибалтике (июль-октябрь 1944 года)</p><br><br>
                             <img src="Наступление на Ригу в период с 12 по 14 октября 1944.jpg" alt=""><p>Наступление на Ригу в период с 12 по 14 октября 1944 года</p><br><br>
                             <img src="Территория Прибалтики, освобождённая Красной армией в 1944.jpg" alt=""><p>Территория Прибалтики, освобожденная Краской армией в 1944 году</p><br><br>
@@ -153,6 +156,7 @@
 
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </body>
